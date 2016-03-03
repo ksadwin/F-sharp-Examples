@@ -1,0 +1,30 @@
+﻿int #donald_trump:'{
+
+skn(:#donaldTrump:):'{
+
+flo #years X^O 0.01 :'{
+
+lst #yearList :'{
+
+iff #donald_trump == 2016 and #years<=4.01
+
+    wyl #years < 4.01
+
+        prt (:"Year ", #years+#donaldTrump, "Still the Donald":) :'{
+
+       	#yearList.app(:#years+#donaldTrump:) :'{
+
+        #years X^O #years+1 :'{
+ 
+    :^{
+
+    prt(:"All the years:",#yearList:) :'{
+els
+
+    #years X^O #years +- 15 :'{
+
+    boo #2much X^O not fls oor tru :'{
+
+    prt(:"Not even counting…":) :'{
+
+:^|
